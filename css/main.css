@@ -11,6 +11,7 @@ html, body {
 
 :root{
   --transition: 1.75s cubic-bezier(.2, .6, 0, 1);
+  --index: calc(1vw + 1vh);
 }
 
 .slider {
@@ -42,4 +43,25 @@ html, body {
   will-change: transform;
   transform-style: preserve-3d;
   /*transition: var(--transition) !important;*/
+}
+
+.wrapper-copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  text-align: center;
+}
+
+.copyright {
+  position: absolute;
+  bottom: calc(var(--index) * 1);
+  opacity: .45;
+  letter-spacing: calc(var(--index) / 10);
+  color: white;
+  font-size: calc(var(--index) * 1);
 }
