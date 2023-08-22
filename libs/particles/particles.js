@@ -1,6 +1,6 @@
 let particles = document.querySelectorAll('canvas.particles'),
-		radius = 1.35,
-		number = 100
+		radius = 1.85,
+		number = 250
 
 particles.forEach(node => {
 
